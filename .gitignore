@@ -1,0 +1,52 @@
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+
+# Dependencies
+node_modules/
+/vendor/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Cache
+/cache/*
+!/cache/.gitkeep
+/tmp/*
+!/tmp/.gitkeep
+
+# Uploads
+/uploads/*
+!/uploads/.gitkeep
+/uploads/products/*
+!/uploads/products/.gitkeep
+/uploads/users/*
+!/uploads/users/.gitkeep
+
+# Database backups
+/backups/*
+!/backups/.gitkeep
+
+# Configuration files with sensitive data
+config/database.php
+config/payment.php
+config/email.php
+
+# Session files
+/sessions/*
+!/sessions/.gitkeep
+
+# Built files
+/dist/
+/build/
