@@ -90,8 +90,8 @@ A world-class, enterprise-grade E-Commerce platform built with Core PHP 8+, MySQ
 
 2. **Configure Environment**
    ```bash
-   cp config/config.example.php config/config.php
-   # Edit config/config.php with your settings
+   cp app/config/config.example.php app/config/config.php
+   # Edit app/config/config.php with your settings
    ```
 
 3. **Create Database**
@@ -102,19 +102,19 @@ A world-class, enterprise-grade E-Commerce platform built with Core PHP 8+, MySQ
 
 4. **Set Permissions**
    ```bash
-   chmod 755 uploads/
+   chmod 755 public/uploads/
    chmod 755 cache/
    chmod 755 sessions/
    chmod 755 backups/
    ```
 
 5. **Access Installation Wizard**
-   - Open browser: `http://localhost/electronics-store-marketplace/install/`
+   - Open browser: `http://localhost/electronics-store-marketplace/public/`
    - Follow setup wizard
    - Create admin account
 
 6. **Admin Login**
-   - URL: `http://localhost/electronics-store-marketplace/admin/`
+   - URL: `http://localhost/electronics-store-marketplace/public/admin/`
    - Default demo admin: `admin@store.local` / `demo123456`
 
 ## Project Structure
@@ -124,6 +124,7 @@ electronics-store-marketplace/
 ├── public/                    # Web root
 │   ├── index.php             # Main entry point
 │   ├── admin.php             # Admin entry point
+│   ├── api.php               # API entry point
 │   ├── assets/
 │   │   ├── css/              # All CSS files
 │   │   ├── js/               # All JavaScript files
@@ -146,7 +147,11 @@ electronics-store-marketplace/
 ├── install/                  # Installation wizard
 ├── vendor/                   # Third-party libraries
 ├── tests/                    # Unit tests
-└── docs/                     # Documentation
+├── docs/                     # Documentation
+├── cache/                    # Cache files
+├── sessions/                 # Session files
+├── logs/                     # Log files
+└── backups/                  # Database backups
 ```
 
 ## Security Features
